@@ -1,0 +1,66 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #030C15;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Roboto Mono';
+    margin: 0;
+    padding: 0;
+}
+.loadingdiv{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #030C15;
+}
+.accessgrantedloading{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #030C15;
+    display:  none;
+    justify-content: center;
+    align-items: center;
+}
+.hackingintotext{
+    font-size: 2.5rem;
+}
+.targetloading{
+    color: #F0EA4D
+}
+.nametextloading{
+    color:  #FF6AC1;
+}
+.hackingintotext{
+    color: #49F787;
+}
+.codeloading{
+    margin-top: 30px;
+    width: 20%;
+    height: 20%;
+    text-align: left;
+}
+.greentext{
+    color: #49F787;
+}
+.redtext{
+    color: #FF4747;
+}
+.yellowtext{
+    color: #F0EA4D;
+}
+.bluetext{
+    color: #0075E2;
+}
+
+.access{
+    font-size: 2.5rem;
+    padding: 30px;
+    border: 2px solid #49F787;
+    color: #49F787;
+}
