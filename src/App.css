@@ -709,6 +709,11 @@ body{
     flex-direction: column;
     margin: 15px;
 }
+.skillcard:hover{
+    scale: 0.9;
+    transition: 0.3s;
+    cursor: crosshair;
+}
 .skillimage{
     width: 60px;
     margin-top: 15px;
@@ -796,6 +801,84 @@ body{
     color: black;
     font-weight: 500;
     cursor: pointer;
+}
+
+/*page7*/
+.page7{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.educationsection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.educationcard{
+    width: 75%;
+    height: 250px;
+    border: 2px solid rgba(128, 128, 128, 0.679);
+    border-radius: 40px;
+    margin-top:40px ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educationimgimg{
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.educationdetails{
+    width: 75%;
+    height: 90%;
+    /* background-color: #ff3838; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.educationhead{
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.educationcollege{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: grey;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.educationsession{
+    font-family: 'Bebas Neue';
+    color: royalblue;
+    font-size: 45px;
+}
+.educationimage{
+    width: 20%;
+    margin-right: 30px;
+    background-color: #ff3838;
+    border-radius: 25px;
+    height: 220px;
+    margin-top: 0px;
+    background:url('/vit.jpg') ;
+    background-position: center;
+    background-size: cover;
+}
+.img2{
+    background: url('/ssav.png');
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -1127,6 +1210,61 @@ body{
     color: black;
     font-weight: 500;
     cursor: pointer;
+}
+.educationsection{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.educationcard{
+    width: 85%;
+    height: auto;
+    border: 2px solid rgba(128, 128, 128, 0.679);
+    border-radius: 40px;
+    margin-top:40px ;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.educationimgimg{
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+.educationdetails{
+    width: 80%;
+    height: 90%;
+    /* background-color: #ff3838; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.educationhead{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.educationcollege{
+    font-family: 'Bebas Neue';
+    font-size: 15px;
+    color: grey;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+.educationsession{
+    font-family: 'Bebas Neue';
+    color: royalblue;
+    font-size: 30px;
 }
 
     
@@ -1621,7 +1759,80 @@ body{
         font-size: 20px;
         margin-top: 10px;
     }
-    
+    .educationsection{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .educationcard{
+        width: 75%;
+        height: auto;
+        border: 2px solid rgba(128, 128, 128, 0.679);
+        border-radius: 40px;
+        margin-top:40px ;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .educationimage{
+        width: 90%;
+        background-color: #ff3838;
+        border-radius: 25px;
+        margin-right: 0px;
+        height: 220px;
+        margin-top: 10px;
+        background:url('/vit.jpg') ;
+        background-position: center;
+        background-size: cover;
+    }
+    .educationimgimg{
+        width: 90%;
+        margin-right: 0px;
+        margin: 0;   
+        border-radius: 25px;
+    }
+    .educationdetails{
+        width: 90%;
+        height: 50%;
+        /* background-color: #ff3838; */
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .educationhead{
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        margin-bottom: 6px;
+    }
+    .educationcollege{
+        font-family: 'Bebas Neue';
+        font-size: 12px;
+        color: grey;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    .educationsession{
+        font-family: 'Bebas Neue';
+        color: royalblue;
+        font-size: 20px;
+    }
+    .img2{
+        background: url('/ssav.png');
+        background-position: center;
+        background-size: cover;
+    }
 
 
     

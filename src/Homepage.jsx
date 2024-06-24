@@ -34,6 +34,7 @@ export default function Homepage() {
       <Page4 />
       <Page5 />
       <Page6 />
+      <Page7 />
     </>
   );
 
@@ -504,6 +505,55 @@ export default function Homepage() {
           <div className="bottombanner">
             <div className="getquotebutton">Get Quote</div>
             <div className="getquotebutton">Send me Idea</div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  function Page7() {
+    return (
+      <div className="page7">
+        <Marquee
+          className="aboutmemarquee"
+          speed={40}
+          autoFill={true}
+          loop={0}
+          direction="left"
+        >
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+          <FaStarOfLife /> &nbsp; Education &nbsp;
+        </Marquee>
+        <div className="educationsection">
+          <div className="educationcard">
+            <div className="educationimage"></div>
+            <div className="educationdetails">
+              <div className="educationhead">
+                Bachelors of Technology in Electronics and Communication
+                Engineering
+              </div>
+              <div className="educationcollege">
+                Vellore Institute of Technology , Vellore | CGPA - 9.1
+              </div>
+              <div className="educationsession">2022 | 2026 [Pursuing]</div>
+            </div>
+          </div>
+          <div className="educationcard">
+            <div className="educationimage img2"></div>
+            <div className="educationdetails">
+              <div className="educationhead">
+                Higher Senior Secondary School | Science Stream
+              </div>
+              <div className="educationcollege">
+                Shri Shankaracharya Vidyalaya , Hudco , Bhilai | Percentage -
+                90%
+              </div>
+              <div className="educationsession">2018 | 2022</div>
+            </div>
           </div>
         </div>
       </div>
