@@ -3,6 +3,8 @@ import Marquee from 'react-fast-marquee';
 import $ from 'jquery';
 import CircleType from 'circletype';
 import { FaStarOfLife, FaCircle } from 'react-icons/fa';
+import { MdOutlineArrowOutward } from 'react-icons/md';
+import { gsap } from 'gsap';
 
 export default function Homepage() {
   const rotatedRef = useRef(null);
@@ -31,6 +33,7 @@ export default function Homepage() {
       <Page3 />
       <Page4 />
       <Page5 />
+      <Page6 />
     </>
   );
 
@@ -56,6 +59,34 @@ export default function Homepage() {
         <div className="marqueepage1">
           <Marquee className="namemarquee" speed={40} loop={0}>
             &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
+            <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
             <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
             <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
             <FaStarOfLife /> &nbsp; Abhishek Jain &nbsp;
@@ -394,11 +425,92 @@ export default function Homepage() {
             <div className="visitbutton">View Project</div>
           </div>
         </div>
+        <div className="allprojectsbutton">
+          <div className="resumebutton">
+            <div className="circlebutton"></div>
+            <div className="buttonhead">All Projects</div>
+          </div>
+        </div>
       </div>
     );
   }
 
   function Page5() {
-    return <div className="page5"></div>;
+    return (
+      <div className="page5">
+        <Marquee
+          className="aboutmemarquee"
+          speed={40}
+          autoFill={true}
+          loop={0}
+          direction="right"
+        >
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+          <FaStarOfLife /> &nbsp; Techstack &nbsp;
+        </Marquee>
+
+        <div className="skillsectiondiv">
+          <div className="skillcarddiv">
+            <SkillCard imgsrc={'reactjs.png'} skilltag={'React JS'} />
+            <SkillCard imgsrc={'NEXTJS.png'} skilltag={'Next JS'} />
+            <SkillCard imgsrc={'nodejs.png'} skilltag={'Node JS'} />
+            <SkillCard imgsrc={'javascript.png'} skilltag={'Javascript'} />
+            <SkillCard imgsrc={'typescript.png'} skilltag={'Typescript'} />
+            <SkillCard imgsrc={'java.png'} skilltag={'Java'} />
+            <SkillCard imgsrc={'dart.png'} skilltag={'Dart'} />
+            <SkillCard imgsrc={'python.png'} skilltag={'Python'} />
+            <SkillCard imgsrc={'git.png'} skilltag={'Git'} />
+            <SkillCard imgsrc={'github.png'} skilltag={'Github'} />
+            <SkillCard imgsrc={'flutter.png'} skilltag={'Flutter'} />
+            <SkillCard imgsrc={'firebase.png'} skilltag={'Firebase'} />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function SkillCard({ imgsrc, skilltag }) {
+    return (
+      <div className="skillcard">
+        <img src={imgsrc} alt="React" className="skillimage" />
+        <div className="skillcardtag">{skilltag}</div>
+      </div>
+    );
+  }
+
+  function Page6() {
+    return (
+      <div className="page6">
+        <div className="banner">
+          <div className="topbanner">
+            <div className="skilltag">FrontEnd Web Dev</div>
+            <div className="skilltag">BackEnd Web Dev</div>
+            <div className="skilltag">Cross Platform App Dev</div>
+          </div>
+          <div className="middlebanner">
+            <div className="middlesubhead">
+              Have An Idea ? A Website ? App ?
+            </div>
+            <div className="middlehead">
+              Want Your Idea to be turned into Reality?
+            </div>
+            <div className="middlesubhead">I got you</div>
+          </div>
+          <div className="bottombanner">
+            <div className="getquotebutton">Get Quote</div>
+            <div className="getquotebutton">Send me Idea</div>
+          </div>
+        </div>
+      </div>
+    );
   }
 }
+
+//Skills
+//REACTJS NEXTJS TAILWINDCSS GIT GITHUB JAVASCRIPT TYPESCRIPT NODEJS PYTHON JAVA
+//DART FLUTTER STATE MANAGEMENT FIREBASE
