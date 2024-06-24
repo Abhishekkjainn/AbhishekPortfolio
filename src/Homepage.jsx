@@ -35,6 +35,7 @@ export default function Homepage() {
       <Page5 />
       <Page6 />
       <Page7 />
+      <Page8 />
     </>
   );
 
@@ -510,6 +511,7 @@ export default function Homepage() {
       </div>
     );
   }
+
   function Page7() {
     return (
       <div className="page7">
@@ -558,6 +560,62 @@ export default function Homepage() {
         </div>
       </div>
     );
+  }
+
+  function Page8() {
+    return (
+      <div className="page8">
+        <Marquee
+          className="aboutmemarquee"
+          speed={40}
+          autoFill={true}
+          loop={0}
+          direction="left"
+        >
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+          <FaStarOfLife /> &nbsp; Experience &nbsp;
+        </Marquee>
+        <div className="educationsection">
+          <div className="educationcard">
+            <div className="educationimage img3"></div>
+            <div className="educationdetails">
+              <div className="educationhead">Automate Vellore</div>
+              <div className="educationcollege">April 2023 - Present</div>
+              <div className="educationcollege">
+                Developed a platform from which Autorickshaws can be booked
+                effortlessly in vellore. Reducing the standard Fares by 30% in
+                Vellore. Providing Employement to More than 20 Autodrivers.
+              </div>
+              <div className="educationsession">Founder | CTO</div>
+            </div>
+          </div>
+          <div className="educationcard">
+            <div className="educationimage img4"></div>
+            <div className="educationdetails">
+              <div className="educationhead">Solero Ceramics</div>
+              <div className="educationcollege">Jun 2024 - July 2024</div>
+              <div className="educationcollege">
+                Developed the Offical Page for the Creamic Tiles Manufacturing
+                Company Based in Gujarat, India. Showcasing Their Products
+                ,Catalogues and Manufacturing Facilitie Present in Gujarat.
+              </div>
+              <div className="educationsession">
+                Full Stack Website Developer
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  function Page9() {
+    return <div className="page9"></div>;
   }
 }
 

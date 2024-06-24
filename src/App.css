@@ -880,6 +880,31 @@ body{
     background-position: center;
     background-size: cover;
 }
+.img3{
+    background: url('/automate.png');
+    background-position: center;
+    background-size: cover;
+}
+.img4{
+    background: url('/solero.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/*page8*/
+.page8{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+}
+.page9{
+    width: 100%;
+    height: 100vh;
+    background-color: #ff3838;
+    background-attachment: fixed;
+}
 
 
 @media (max-width: 1000px) and (min-width: 600px) {
@@ -1722,8 +1747,8 @@ body{
     .skillsectiondiv{
         width: 100%;
         height: 80vh;
-        padding-top: 150px;
-        padding-bottom: 150px;
+        padding-top: 170px;
+        padding-bottom: 170px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1834,6 +1859,16 @@ body{
         background-size: cover;
     }
 
+    .img3{
+        background: url('/automate.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .img4{
+        background: url('/solero.jpg');
+        background-position: center;
+        background-size: cover;
+    }
 
     
 }
