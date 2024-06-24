@@ -30,6 +30,7 @@ export default function Homepage() {
       <Page2 />
       <Page3 />
       <Page4 />
+      <Page5 />
     </>
   );
 
@@ -225,12 +226,29 @@ export default function Homepage() {
   }
 
   function Page4() {
+    const page4Ref = useRef(null);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        const page4 = page4Ref.current;
+        const projectDivs = page4.querySelectorAll('.projectdiv');
+        const rect = page4.getBoundingClientRect();
+
+        if (rect.top <= 0 && rect.bottom >= window.innerHeight) {
+          projectDivs.forEach((div) => div.classList.add('sticky'));
+        } else {
+          projectDivs.forEach((div) => div.classList.remove('sticky'));
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
     return (
-      <div className="page4">
-        {/* <div className="headingpage4">
-          <div className="page4circle"></div>
-          <div className="projecthead">Projects</div>
-        </div> */}
+      <div className="page4" id="page4" ref={page4Ref}>
         <Marquee
           className="aboutmemarquee"
           speed={40}
@@ -246,8 +264,141 @@ export default function Homepage() {
           <FaStarOfLife /> &nbsp; Projects &nbsp;
           <FaStarOfLife /> &nbsp; Projects &nbsp;
         </Marquee>
-        <img src="livitmockup.png" alt="livitporject" className="mockupimg" />
+        <div className="projectdiv projectdiv1">
+          <div className="projectcardhead">
+            <div className="sno">1.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">App Dev</div>
+              <div className="cardtag">College Project</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> LiVIT
+            </div>
+            <div className="projectdesc">
+              Your gateway to campus life: Explore all VIT Vellore events at
+              your fingertips!
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
+        <div className="projectdiv projectdiv2">
+          <div className="projectcardhead">
+            <div className="sno">2.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">Web Dev</div>
+              <div className="cardtag">Commerical Website</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> Solero
+            </div>
+            <div className="projectdesc">
+              Crafted a stunning commercial website for Solero Ceramics,
+              showcasing their premium, elegant, and durable ceramic tiles to
+              transform any space with style
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
+        <div className="projectdiv projectdiv3">
+          <div className="projectcardhead">
+            <div className="sno">3.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">App Dev</div>
+              <div className="cardtag">Daily News</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> Newsmann
+            </div>
+            <div className="projectdesc">
+              Developed a dynamic daily news app that categorizes and delivers
+              the latest headlines, keeping you informed and organized
+              effortlessly
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
+        <div className="projectdiv projectdiv4">
+          <div className="projectcardhead">
+            <div className="sno">4.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">App Dev</div>
+              <div className="cardtag">Finance Manager</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> Spennd
+            </div>
+            <div className="projectdesc">
+              Developed an all-in-one Expense Manager app, equipped with
+              essential features for daily financial management and budgeting.
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
+        <div className="projectdiv projectdiv5">
+          <div className="projectcardhead">
+            <div className="sno">5.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">App Dev</div>
+              <div className="cardtag">Social Media</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> Vision
+            </div>
+            <div className="projectdesc">
+              Created a visually inspiring social media platform where ideas
+              come to life, allowing users to discover, save, and share their
+              passions.
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
+        <div className="projectdiv projectdiv6">
+          <div className="projectcardhead">
+            <div className="sno">6.</div>
+            <div className="projectcardtags">
+              <div className="cardtag">Web Dev</div>
+              <div className="cardtag">Cab Booking</div>
+            </div>
+          </div>
+          <div className="projectcardcontent">
+            <div className="projectname">
+              <div className="circleprodcard"></div> AutoMate
+            </div>
+            <div className="projectdesc">
+              Founded and developed Automate Vellore, an online autorickshaw
+              booking platform that simplifies travel in Vellore, making your
+              journeys easier and more convenient.
+            </div>
+          </div>
+          <div className="projectvisitbutton">
+            <div className="visitbutton">View Project</div>
+          </div>
+        </div>
       </div>
     );
+  }
+
+  function Page5() {
+    return <div className="page5"></div>;
   }
 }
