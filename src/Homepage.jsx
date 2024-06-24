@@ -36,6 +36,7 @@ export default function Homepage() {
       <Page6 />
       <Page7 />
       <Page8 />
+      <Page9 />
     </>
   );
 
@@ -609,13 +610,37 @@ export default function Homepage() {
               </div>
             </div>
           </div>
+          <div className="educationcard">
+            <div className="educationimage img6"></div>
+            <div className="educationdetails">
+              <div className="educationhead">Studize</div>
+              <div className="educationcollege">Feb 2024 - March 2024</div>
+              <div className="educationcollege">
+                Developed Some Crucial Features of the App such as Syllabus
+                Tracking System , Dynamic Notification System , Integrated a
+                Fully Functional Chatbot. Contributing to almost 50% of the
+                Complete Application and increasing the Team Efficiency by 30%
+              </div>
+              <div className="educationsession">
+                Cross Platform App Developer
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
   }
 
   function Page9() {
-    return <div className="page9"></div>;
+    return (
+      <div className="page9">
+        <div className="page9head">Intersted in Working Together?</div>
+        <div className="resumebutton">
+          <div className="circlebutton"></div>
+          <div className="buttonhead">Drop Me a Mail</div>
+        </div>
+      </div>
+    );
   }
 }
 

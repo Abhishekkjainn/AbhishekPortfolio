@@ -890,6 +890,11 @@ body{
     background-position: center;
     background-size: cover;
 }
+.img6{
+    background: url('/studize.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
 /*page8*/
 .page8{
@@ -904,6 +909,27 @@ body{
     height: 100vh;
     background-color: #ff3838;
     background-attachment: fixed;
+    background: url('/gradient2.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page9head{
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    color: black;
+    font-weight: 500;
+    transform: scaleY(1.8) scaleX(1);
+    text-align: center;
+}
+.page9subhead{
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: rgb(8, 51, 182);
 }
 
 
@@ -1866,6 +1892,23 @@ body{
     }
     .img4{
         background: url('/solero.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .page9head{
+        width: 80%;
+        text-align: center;
+        font-family: 'Bebas Neue';
+        font-size: 50px;
+        color: black;
+        font-weight: 500;
+        transform: scaleY(1) scaleX(1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img6{
+        background: url('/studize.jpg');
         background-position: center;
         background-size: cover;
     }
