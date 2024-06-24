@@ -1,0 +1,1087 @@
+body{
+    margin: 0;padding: 0;
+    overflow-x: hidden;
+    font-family: "Bricolage Grotesque";
+}
+
+/*Header*/
+
+.header{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;right: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: calc(100%-40px);
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(66, 66, 66, 0.332);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerlogo{
+    width: 20%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerlogoimage{
+    height: 75%;
+}
+.headerlinks{
+    width: 60%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Darker Grotesque";
+}
+.resumelink{
+    width: 20%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Darker Grotesque";
+}
+.linkdiv{
+    min-width: 80px;
+    max-width: max-content;
+    height: 20px;
+    padding: 5px;
+    /* border: 1px solid rgba(59, 59, 59, 0.722); */
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: grey;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+}
+.linkdiv:hover{
+    /* background-color: rgb(193, 193, 193); */
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease, font-weight 0.2s ease;
+  font-size: 14px;
+  font-weight: 700;
+  border-color: transparent; /* Optional: Remove border color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  transform: scale(1.05); /* Optional: Sl*/
+  cursor: pointer;
+}
+.circlefill{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.linkdiv:hover .circlefill{
+    width: 150%;
+    height: 100%;
+    border-radius: 40px;
+    position: absolute;
+    transition: 0.4s;
+    z-index: 1;
+}
+.linkdiv {
+    min-width: 80px;
+    max-width: max-content;
+    height: 20px;
+    padding: 5px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Important for vertical alignment */
+    font-size: 15px;
+    font-weight: 600;
+    color: grey; /* Initial text color */
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .linkdiv:hover {
+    color: black; /* Text color on hover */
+    transition: background-color 0.3s ease, color 0.3s ease, font-size 0.2s ease, font-weight 0.2s ease;
+    font-size: 14px;
+    font-weight: 700;
+    border-color: transparent; /* Optional: Remove border color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    /* Optional: Slight scaling removed (consider for subtle hover effect) */
+    cursor: pointer;
+  }
+  
+  .circlefill {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px; /* Adjust margin if needed */
+    position: absolute;
+    top: 50%; /* Centered vertically */
+    left: 0; /* New: Position at left of linkdiv */
+    transform: translateY(-50%); /* Offset for centered positioning */
+    transition: width 0.4s, height 0.4s, background-color 0.4s ease; /* Include background color transition */
+    z-index: 1; /* New: Set z-index to 0 so text is on top */
+  }
+  
+  .linkdiv:hover .circlefill {
+    width: 200%; /* Expands to fill the entire width of linkdiv */
+    height: 200%; /* Expands to fill the entire height of linkdiv */
+    border-radius: inherit; /* Inherits border-radius from linkdiv for smooth fill */
+    /* background-color: rgba(0, 0, 0, 0.2); Optional: Set a semi-transparent hover background color */
+    transition: 0.6s;
+  }
+  .text{
+    position: relative;
+    z-index: 2;
+  }
+
+  /*Header*/
+
+  /*Circular Div*/
+  .circular-text{
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    z-index: 500;
+    font-family: 'Bebas Neue';
+}
+.centercircle{
+    width: 35px;
+}
+.arrow{
+    position: fixed;
+    bottom: 75px;
+    right: 75px;
+    z-index: 500;
+}
+
+  .circlefillcircle{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+
+
+  /*Menubar*/
+
+
+#checkbox {
+    display: none;
+  }
+  
+  .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+    scale: 0.6;
+    display: none;
+  }
+  
+  .bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(253, 255, 243);
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  /* #checkbox:checked + .toggle .bars {
+    margin-left: 13px;
+  } */
+  
+  #checkbox:checked + .toggle #bar2 {
+    transform: translateY(14px) rotate(60deg);
+    margin-left: 0;
+    transform-origin: right;
+    transition-duration: .3s;
+    z-index: 2;
+  }
+  
+  #checkbox:checked + .toggle #bar1 {
+    transform: translateY(28px) rotate(-60deg);
+    transition-duration: .3s;
+    transform-origin: left;
+    z-index: 1;
+  }
+  
+  #checkbox:checked + .toggle {
+    transform: rotate(-90deg);
+  }
+  /* #checkbox:checked + .toggle #bar3 {
+    transform: rotate(90deg);
+    transition-duration: .3s;
+    transform-origin:right;
+  } */
+
+
+  /*Menubar*/
+
+
+  /*Page1*/
+
+
+.page1{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.namemarquee{
+    font-family: "Bricolage Grotesque";
+    color: royalblue;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-size: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marqueepage1{
+    transform: rotate(-3deg);
+    position: relative;
+    z-index: 1;
+}
+.imagepage1{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abhishekimage{
+    height: 80%;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 10;
+    filter: grayscale(1) brightness(0.7);
+}
+
+  
+/*Page1*/
+
+/*Page2*/
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.aboutmemarquee{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: "Bricolage Grotesque";
+    font-size: 45px;
+}
+.aboutmesection{
+    width: 90%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: rgb(57, 57, 57);
+    font-size: 35px;
+    font-family: "Bricolage Grotesque";
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    text-align: justify;
+}
+.blue{
+    color: royalblue;
+}
+.resumebutton{
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+.circlebutton{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.buttonhead{
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    font-family: "Bricolage Grotesque";
+    position: relative;
+    z-index: 2;
+}
+.resumebutton:hover{
+    border: 2px solid transparent;
+    color: black;
+    cursor: pointer;
+}
+.resumebutton:hover .circlebutton{
+    scale: 20;
+    transition: 0.8s;
+    color: black;
+}
+.resumebutton:hover .buttonhead{
+    color: black;
+    z-index: 2;
+    font-weight: 500;
+    transform: translateX(-15px);
+    transition: 0.2s;
+}
+
+
+/*Page2*/
+/*Page3*/
+
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+/*Page3*/
+.skillsection{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilldiv{
+    width: 28%;
+    height: 90%;
+    border: none;
+    border-radius: 40px;
+    margin: 15px;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skilldiv1{
+    background: url('/gradient1.png');
+    background-position: center;
+    background-size: cover;
+}
+.skilldiv2{
+    background: url('/gradient2.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv3{
+    background: url('/gradient3.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv::after{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    /* background: linear-gradient(to top , rgba(0, 0, 0, 0.759) , transparent); */
+}
+.skilldiv:hover{
+    width: 50%;
+    transition: 0.5s;
+}
+.topskilldiv{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.middleskilldiv{
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottomskilldiv{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilltag{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    width: max-content;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.495);
+    backdrop-filter: blur(5px);
+    color: white;
+    margin: 5px;
+}
+.titleskillcard{
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.titlesub{
+    width: 80%;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+.skilldiv:hover .titlesub{
+    display: flex;
+    transition: 0.9s;
+}
+.infobutton{
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 10;
+}
+.infobutton:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/*Page4*/
+.page4{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* .headingpage4{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.page4circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 20px;
+}
+.projecthead{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+} */
+.mockupimg{
+    height: 80%;
+    border-radius: 40px;
+}
+
+
+@media (max-width: 1000px) and (min-width: 600px) {
+    .headerlinks{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggle {
+        display: flex;
+    }
+    .resumelink{
+        display: none;
+    }
+    .namemarquee{
+        font-family: "Bricolage Grotesque";
+        color: royalblue;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        /* background-color: aqua; */
+        font-size: 70px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .marqueepage1{
+        transform: rotate(-3deg);
+        position: relative;
+        z-index: 1;
+    }
+    .abhishekimage{
+        height: 80%;
+        position: absolute;
+        top: 18%;
+        left: 30%;
+        z-index: 10;
+        filter: grayscale(1);
+    }
+    .aboutmemarquee{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: white;
+        font-family: "Bricolage Grotesque";
+        font-size: 30px;
+    }
+    .aboutmesection{
+        width: 90%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: rgb(57, 57, 57);
+        font-size: 25px;
+        font-family: "Bricolage Grotesque";
+        letter-spacing: 1.2px;
+        font-weight: 400;
+        text-align: justify;
+    }
+    .blue{
+        color: royalblue;
+    }
+    .resumebutton{
+        width: auto;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 40px;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    .circlebutton{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .buttonhead{
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        font-family: "Bricolage Grotesque";
+        position: relative;
+        z-index: 2;
+    }
+    .resumebutton:hover{
+        border: 2px solid transparent;
+        color: black;
+        cursor: pointer;
+    }
+    .resumebutton:hover .circlebutton{
+        scale: 20;
+        transition: 0.8s;
+        color: black;
+    }
+    .resumebutton:hover .buttonhead{
+        color: black;
+        z-index: 2;
+        font-weight: 500;
+    }
+      /*Circular Div*/
+  .circular-text{
+    position: fixed;
+    bottom: 30px;
+    right: 90px;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+    z-index: 500;
+    font-family: 'Bebas Neue';
+}
+.centercircle{
+    width: 35px;
+}
+.arrow{
+    position: fixed;
+    bottom: 75px;
+    right: 75px;
+    z-index: 500;
+}
+.skillsection{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilldiv{
+    width: 30%;
+    height: 90%;
+    border: none;
+    border-radius: 40px;
+    margin: 5px;
+    position: relative; 
+}
+
+.skilldiv1{
+    background: url('/gradient1.png');
+    background-position: center;
+    background-size: cover;
+}
+.skilldiv2{
+    background: url('/gradient2.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv3{
+    background: url('/gradient3.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv::after{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    /* background: linear-gradient(to top , rgba(0, 0, 0, 0.759) , transparent); */
+}
+.skilldiv:hover{
+    width: 70%;
+    transition: 0.5s;
+}
+.topskilldiv{
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.middleskilldiv{
+    width: 90%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottomskilldiv{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilltag{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    font-weight: 400;
+    width: max-content;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.495);
+    backdrop-filter: blur(5px);
+    color: white;
+    margin: 5px;
+}
+.titleskillcard{
+    font-size: 28px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.titlesub{
+    width: 80%;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: none;
+}
+.skilldiv:hover .titlesub{
+    display: flex;
+    transition: 0.9s;
+}
+.skilldiv:hover .titleskillcard{
+    font-size: 20px;
+}
+.infobutton{
+    width: 80%;
+    height: 50px;
+    border-radius: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+.infobutton:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid white;
+}
+    
+}
+
+@media (max-width: 600px){
+    .headerlinks{
+        display: none;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggle {
+        display: flex;
+    }
+    .resumelink{
+        display: none;
+    }
+    .namemarquee{
+        font-family: "Bricolage Grotesque";
+        color: royalblue;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        /* background-color: aqua; */
+        font-size: 50px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .marqueepage1{
+        transform: rotate(-3deg);
+        position: relative;
+        z-index: 1;
+    }
+    .abhishekimage{
+        height: 60%;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        z-index: 10;
+        filter: grayscale(1);
+    }
+    .aboutmemarquee{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        color: white;
+        font-family: "Bricolage Grotesque";
+        font-size: 30px;
+        background-color: black;
+    }
+    .aboutmesection{
+        width: 85%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        padding-right: 7.5%;
+        padding-left: 7.5%;
+        color: rgb(57, 57, 57);
+        font-size: 15px;
+        font-family: "Bricolage Grotesque";
+        letter-spacing: 1.2px;
+        font-weight: 400;
+        text-align: left;
+    }
+    .blue{
+        color: royalblue;
+    }
+    .resumebutton{
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        height: 30px;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    .circlebutton{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .buttonhead{
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+        font-family: "Bricolage Grotesque";
+        position: relative;
+        z-index: 2;
+    }
+    .resumebutton:hover{
+        border: 2px solid transparent;
+        color: black;
+        cursor: pointer;
+    }
+    .resumebutton:hover .circlebutton{
+        scale: 25;
+        transition: 0.4s;
+        color: black;
+    }
+    .resumebutton:hover .buttonhead{
+        color: black;
+        z-index: 2;
+        font-weight: 500;
+    }
+      /*Circular Div*/
+  .circular-text{
+    position: fixed;
+    bottom: 20px;
+    right: 70px;
+    font-size: 10px;
+    color: white;
+    font-weight: 100;
+    z-index: 500;
+    font-family: 'Bebas Neue';
+}
+.centercircle{
+    width: 20px;
+}
+.arrow{
+    position: fixed;
+    bottom: 65px;
+    right: 60px;
+    z-index: 500;
+}
+.skillsection{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skilldiv{
+    width: 90%;
+    height: 30%;
+    border: none;
+    border-radius: 20px;
+    margin: 5px;
+    position: relative; 
+}
+
+.skilldiv1{
+    background: url('/gradient1.png');
+    background-position: center;
+    background-size: cover;
+}
+.skilldiv2{
+    background: url('/gradient2.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv3{
+    background: url('/gradient3.png');
+    background-position: center;
+    background-size: cover;
+} 
+.skilldiv::after{
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    /* background: linear-gradient(to top , rgba(0, 0, 0, 0.759) , transparent); */
+}
+.skilldiv:hover{
+    width: 90%;
+    height: 50%;
+    transition: 0.5s;
+}
+.topskilldiv{
+    width: 90%;
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.middleskilldiv{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bottomskilldiv{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skilltag{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    font-weight: 400;
+    width: max-content;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.495);
+    backdrop-filter: blur(5px);
+    color: white;
+    margin: 5px;
+}
+.titleskillcard{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.titlesub{
+    width: 80%;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    display: none;
+    text-align: justify;
+}
+.skilldiv:hover .titlesub{
+    display: flex;
+    transition: 0.9s;
+}
+.skilldiv:hover .titleskillcard{
+    font-size: 20px;
+}
+.infobutton{
+    width: 50%;
+    height: 20px;
+    border-radius: 40px;
+    font-size: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+}
+.infobutton:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+    
+}
