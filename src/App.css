@@ -1028,8 +1028,8 @@ body{
     align-items: center;
 }
 .skilltag{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 10px;
@@ -1063,9 +1063,12 @@ body{
 .skilldiv:hover .titleskillcard{
     font-size: 20px;
 }
+.skilldiv:hover .topskilldiv{
+    height: 15%;
+}
 .infobutton{
-    width: 50%;
-    height: 20px;
+    width: 40%;
+    height: 30px;
     border-radius: 40px;
     font-size: 12px;
     background-color: white;
@@ -1075,12 +1078,16 @@ body{
     font-weight: 600;
     border: 2px solid transparent;
     margin-bottom: 10px;
+    transform: translateY(-10px);
 }
 .infobutton:hover{
     cursor: pointer;
     transition: 0.5s;
     background-color: transparent;
     border: 2px solid white;
+}
+.skilldiv:hover .infobutton{
+    transform: translateY(0px);
 }
 
     
