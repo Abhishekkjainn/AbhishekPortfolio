@@ -3,8 +3,6 @@ import Marquee from 'react-fast-marquee';
 import $ from 'jquery';
 import CircleType from 'circletype';
 import { FaStarOfLife, FaCircle } from 'react-icons/fa';
-import { MdOutlineArrowOutward } from 'react-icons/md';
-import { gsap } from 'gsap';
 
 export default function Homepage() {
   const rotatedRef = useRef(null);
