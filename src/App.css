@@ -11,9 +11,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;right: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: calc(100%-40px);
+    width: calc(100%);
     height: 70px;
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
@@ -32,6 +30,7 @@ body{
 }
 .headerlogoimage{
     height: 75%;
+    margin-left: 25px;
 }
 .headerlinks{
     width: 60%;
@@ -200,8 +199,9 @@ body{
     justify-content: center;
     gap: 10px;
     transition-duration: .5s;
-    scale: 0.6;
+    scale: 0.5;
     display: none;
+    margin-right: 25px;
   }
   
   .bars {
@@ -937,12 +937,83 @@ body{
 .aboutpage{
     width: 100%;
     height: 100vh;
-    background-color: #ff3838;
+    background-color: black;
 }
 .linkstyle{
     text-decoration: none;
 }
+.aboutpage2{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.whatidobanner{
+    width: 80%;
+    height: 400px;
+    background-color: #ff3838;
+    border-radius: 40px;
+    background: url('/gradient6.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.whatidohead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 
+}
+.whatidocircle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 15px;
+}
+.whatidoheadcontent{
+    font-family: 'Bebas Neue';
+    font-size: 45px;
+    color: white;
+    font-weight: 500;
+}
+.whatidocontent{
+    width: 80%;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    color: white;
+    font-weight: 100;
+}
+.aboutpage3{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+.exphead{
+    padding-top: 60px;
+}
+.lastpage{
+    width: 100%;
+    height: auto;
+    background-color: rgb(12, 12, 12);
+}
+.aboutmarq{
+    
+}
+.marqimg{
+    margin-right: 100px;
+    margin-left: 100px;
+}
 
 /*Projects Page*/
 .projectspage{
@@ -1129,6 +1200,18 @@ body{
     background: url('/karigarimockup.png');
     background-position: center;
     background-size: cover;
+}
+
+/*Services Page*/
+.servicespage{
+    width: 100%;
+    /* min-height: 100vh; */
+    max-height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @media (max-width: 1000px) and (min-width: 600px) {
@@ -2332,6 +2415,57 @@ body{
         font-family: 'Bebas Neue';
         color: white;
         font-size: 13px;
+        font-weight: 100;
+    }
+    .aboutpage2{
+        width: 100%;
+        height: auto;
+        padding-bottom: 40px;
+        padding-top: 60px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .whatidobanner{
+        width: 90%;
+        height: 500px;
+        background-color: #ff3838;
+        border-radius: 25px;
+        background: url('/gradient6.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .whatidohead{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .whatidocircle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        margin-right: 15px;
+    }
+    .whatidoheadcontent{
+        font-family: 'Bebas Neue';
+        font-size: 30px;
+        color: white;
+        font-weight: 500;
+    }
+    .whatidocontent{
+        width: 80%;
+        font-family: 'Bebas Neue';
+        font-size: 18px;
+        color: white;
         font-weight: 100;
     }
 

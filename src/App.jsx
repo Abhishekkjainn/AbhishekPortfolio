@@ -27,7 +27,9 @@ export default function App() {
     return (
       <div className="header">
         <div className="headerlogo">
-          <img src="logo2.jpg" alt="logo" className="headerlogoimage" />
+          <Link className="headerlogo" to={'/'}>
+            <img src="logo2.jpg" alt="logo" className="headerlogoimage" />
+          </Link>
         </div>
 
         <div className="headerlinks">
