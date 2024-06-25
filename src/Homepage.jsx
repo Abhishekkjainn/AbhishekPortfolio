@@ -3,6 +3,7 @@ import Marquee from 'react-fast-marquee';
 import $ from 'jquery';
 import CircleType from 'circletype';
 import { FaStarOfLife, FaCircle } from 'react-icons/fa';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 export default function Homepage() {
   const rotatedRef = useRef(null);
@@ -427,10 +428,12 @@ export default function Homepage() {
           </div>
         </div>
         <div className="allprojectsbutton">
-          <div className="resumebutton">
-            <div className="circlebutton"></div>
-            <div className="buttonhead">All Projects</div>
-          </div>
+          <Link to={'/projects'}>
+            <div className="resumebutton">
+              <div className="circlebutton"></div>
+              <div className="buttonhead">All Projects</div>
+            </div>
+          </Link>
         </div>
       </div>
     );
