@@ -428,7 +428,7 @@ export default function Homepage() {
           </div>
         </div>
         <div className="allprojectsbutton">
-          <Link to={'/projects'}>
+          <Link to={'/projects'} className="linkstyle">
             <div className="resumebutton">
               <div className="circlebutton"></div>
               <div className="buttonhead">All Projects</div>

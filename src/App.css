@@ -1105,6 +1105,31 @@ body{
     background-position: center;
     background-size: cover;
 }
+.reordercard{
+    background: url('/reordermockup.png');
+    background-position: center;
+    background-size: cover;
+}
+.tmdbcard{
+    background: url('/tmdbmockup.png');
+    background-position: center;
+    background-size: cover;
+}
+.visioncard{
+    background: url('/visionmockup.png');
+    background-position: center;
+    background-size: cover;
+}
+.hoodeyecard{
+    background: url('/hoodeyemockup.png');
+    background-position: center;
+    background-size: cover;
+}
+.karigaricard{
+    background: url('/karigarimockup.png');
+    background-position: center;
+    background-size: cover;
+}
 
 @media (max-width: 1000px) and (min-width: 600px) {
     .headerlinks{
