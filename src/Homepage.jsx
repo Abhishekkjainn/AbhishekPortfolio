@@ -223,8 +223,14 @@ export default function Homepage() {
                 creativity.
               </div>
             </div>
+
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/webdeveloper'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
           <div className="skilldiv skilldiv2">
@@ -242,7 +248,12 @@ export default function Homepage() {
               </div>
             </div>
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/appdeveloper'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
           <div className="skilldiv skilldiv3">
@@ -260,7 +271,12 @@ export default function Homepage() {
               </div>
             </div>
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/uiuxdesigner'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
         </div>
@@ -307,6 +323,7 @@ export default function Homepage() {
           <FaStarOfLife /> &nbsp; Projects &nbsp;
           <FaStarOfLife /> &nbsp; Projects &nbsp;
         </Marquee>
+
         <div className="projectdiv projectdiv1">
           <div className="projectcardhead">
             <div className="sno">1.</div>
@@ -324,10 +341,13 @@ export default function Homepage() {
               your fingertips!
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link className="projectvisitbutton linkstyle" to={'/projects/livit'}>
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
+
         <div className="projectdiv projectdiv2">
           <div className="projectcardhead">
             <div className="sno">2.</div>
@@ -346,9 +366,14 @@ export default function Homepage() {
               transform any space with style
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link
+            className="projectvisitbutton linkstyle"
+            to={'/projects/solero'}
+          >
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
         <div className="projectdiv projectdiv3">
           <div className="projectcardhead">
@@ -368,9 +393,14 @@ export default function Homepage() {
               effortlessly
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link
+            className="projectvisitbutton linkstyle"
+            to={'/projects/newsmann'}
+          >
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
         <div className="projectdiv projectdiv4">
           <div className="projectcardhead">
@@ -389,9 +419,14 @@ export default function Homepage() {
               essential features for daily financial management and budgeting.
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link
+            className="projectvisitbutton linkstyle"
+            to={'/projects/spennd'}
+          >
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
         <div className="projectdiv projectdiv5">
           <div className="projectcardhead">
@@ -411,9 +446,14 @@ export default function Homepage() {
               passions.
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link
+            className="projectvisitbutton linkstyle"
+            to={'/projects/vision'}
+          >
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
         <div className="projectdiv projectdiv6">
           <div className="projectcardhead">
@@ -433,9 +473,14 @@ export default function Homepage() {
               journeys easier and more convenient.
             </div>
           </div>
-          <div className="projectvisitbutton">
-            <div className="visitbutton">View Project</div>
-          </div>
+          <Link
+            className="projectvisitbutton linkstyle"
+            to={'/projects/automate'}
+          >
+            <div className="projectvisitbutton">
+              <div className="visitbutton">View Project</div>
+            </div>
+          </Link>
         </div>
         <div className="allprojectsbutton">
           <Link to={'/projects'} className="linkstyle">

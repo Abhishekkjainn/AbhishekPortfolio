@@ -244,6 +244,14 @@ body{
   /*Menubar*/
 
   /*Resposnive Menu*/
+  .pro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
   .responsivemenudiv{
     width: 90%;
     height: 100vh;
@@ -381,7 +389,7 @@ body{
     padding-bottom: 40px;
     padding-right: 5%;
     padding-left: 5%;
-    color: rgb(57, 57, 57);
+    color: rgb(94, 94, 94);
     font-size: 35px;
     font-family: "Bricolage Grotesque";
     letter-spacing: 1.2px;
@@ -2582,4 +2590,252 @@ body{
 }
 
     
+}
+
+
+/*Projects Page*/
+.livitpage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.indprojectpage1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.indprojecthead{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indcircle{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.indheadcontent{
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size: 80px;
+    font-weight: 100;
+}
+.indprojectsubhead{
+    width: 60%;
+    height: auto;
+    padding-top: 40px;
+    color: grey;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
+.indprojectpage2{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.indfirstimg{
+    width: 80%;
+    border-radius: 40px;
+}
+.indlogopage{
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.indpage3head{
+    width:80%;
+    height: 80px;
+    border-top: 1px solid rgba(70, 70, 70, 0.451);
+    border-bottom: 1px solid rgba(70, 70, 70, 0.451);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    font-family: 'Bebas Neue';
+    font-size:50px ;
+}
+.logodiv{
+    width: 80%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+.logoimg1{
+    width: 50%;
+    height: 100%;
+}
+.logoimg2{
+    width: 50%;
+    height: 100%;
+}
+.logodivimg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.indskillsusedpage{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+@media (max-width:1000px) and (min-width:600px){
+    .indcircle{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .indheadcontent{
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 50px;
+        font-weight: 100;
+    }
+    .indprojectsubhead{
+        width: 60%;
+        height: auto;
+        padding-top: 40px;
+        color: grey;
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+    }
+    .indfirstimg{
+        width: 80%;
+        border-radius: 30px;
+    }
+    .indpage3head{
+        width:80%;
+        height: 80px;
+        border-top: 1px solid rgba(70, 70, 70, 0.451);
+        border-bottom: 1px solid rgba(70, 70, 70, 0.451);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size:40px ;
+    }
+    .logodiv{
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .logoimg1{
+        width: 80%;
+        height: 100%;
+    }
+    .logoimg2{
+        width: 80%;
+        height: 100%;
+    }
+    .logodivimg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:600px) {
+    .indcircle{
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .indheadcontent{
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 60px;
+        font-weight: 100;
+    }
+    .indprojectsubhead{
+        width: 80%;
+        height: auto;
+        padding-top: 40px;
+        color: grey;
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        text-align: center;
+    }
+    .indfirstimg{
+        width: 80%;
+        border-radius:25px;
+    }
+    .indpage3head{
+        width:80%;
+        height: 60px;
+        border-top: 1px solid rgba(70, 70, 70, 0.451);
+        border-bottom: 1px solid rgba(70, 70, 70, 0.451);
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size:30px ;
+    }
+    .logodiv{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        margin-top: 80px;
+    }
+    .logoimg1{
+        width: 100%;
+        height: 100%;
+    }
+    .logoimg2{
+        width: 100%;
+        height: 100%;
+    }
+    .logodivimg{
+        width: 100%;
+        height: 100%;
+        /* object-fit: cover; */
+    }
 }

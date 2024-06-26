@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 export default function ServicesPage() {
   return (
     <div className="servicespage">
@@ -38,8 +39,14 @@ export default function ServicesPage() {
                 creativity.
               </div>
             </div>
+
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/webdeveloper'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
           <div className="skilldiv skilldiv2">
@@ -57,7 +64,12 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/appdeveloper'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
           <div className="skilldiv skilldiv3">
@@ -75,7 +87,12 @@ export default function ServicesPage() {
               </div>
             </div>
             <div className="bottomskilldiv">
-              <div className="infobutton">Get More Info</div>
+              <Link
+                to={'/services/uiuxdesigner'}
+                className="bottomskilldiv linkstyle"
+              >
+                <div className="infobutton">Get More Info</div>
+              </Link>
             </div>
           </div>
         </div>

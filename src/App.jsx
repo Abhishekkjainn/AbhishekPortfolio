@@ -6,6 +6,19 @@ import AboutPage from './pages/About';
 import ProjectsPage from './pages/Projects';
 import ServicesPage from './pages/Services';
 import ContactsPage from './pages/Contacts';
+import Livit from './projects/livit';
+import Solero from './projects/solero';
+import Newsman from './projects/newsman';
+import Spennd from './projects/spennd';
+import Reorder from './projects/reorder';
+import TMDB from './projects/tmdb';
+import Vision from './projects/vision';
+import Hoodeye from './projects/hoodeye';
+import Karigari from './projects/karigari';
+import Automate from './projects/automate';
+import Appdev from './services/appdeveloper';
+import Uiux from './services/uiuxdesigner';
+import Webdeveloper from './services/webdeveloper';
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false); // State variable for menu visibility
@@ -22,6 +35,19 @@ export default function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/projects/livit" element={<Livit />} />
+          <Route path="/projects/solero" element={<Solero />} />
+          <Route path="/projects/newsmann" element={<Newsman />} />
+          <Route path="/projects/spennd" element={<Spennd />} />
+          <Route path="/projects/reorder" element={<Reorder />} />
+          <Route path="/projects/TMDB" element={<TMDB />} />
+          <Route path="/projects/vision" element={<Vision />} />
+          <Route path="/projects/hoodeye" element={<Hoodeye />} />
+          <Route path="/projects/karigari" element={<Karigari />} />
+          <Route path="/projects/automate" element={<Automate />} />
+          <Route path="/services/appdeveloper" element={<Appdev />} />
+          <Route path="/services/uiuxdesigner" element={<Uiux />} />
+          <Route path="/services/webdeveloper" element={<Webdeveloper />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
         </Routes>
