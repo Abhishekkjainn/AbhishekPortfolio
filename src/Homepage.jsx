@@ -4,6 +4,7 @@ import $ from 'jquery';
 import CircleType from 'circletype';
 import { FaStarOfLife, FaCircle } from 'react-icons/fa';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 export default function Homepage() {
   const rotatedRef = useRef(null);
@@ -26,6 +27,13 @@ export default function Homepage() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Abhishek Jain | Web Developer | Cross Platform Application Developer |
+          Portfolio
+        </title>
+      </Helmet>
       <Circulartext />
       <Page1 />
       <Page2 />

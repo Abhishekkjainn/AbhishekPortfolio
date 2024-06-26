@@ -1,6 +1,14 @@
+import { Helmet } from 'react-helmet';
 export default function ContactsPage() {
   return (
     <div className="contactspage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Get in Touch | Abhishek Jain's Portfolio | Web Developer | Cross
+          Platform Application Developer
+        </title>
+      </Helmet>
       <div className="projectpage1">
         <div className="projectpage1head">
           <div className="head">
@@ -13,16 +21,20 @@ export default function ContactsPage() {
         </div>
       </div>
       <div className="contactpage2">
-        <img
-          src="/contactcard1.png"
-          alt="contact card"
-          className="contactcards"
-        />
-        <img
-          src="/contactcard2.png"
-          alt="contact card"
-          className="contactcards"
-        />
+        <a href="mailto:jainabhishek1904@gmail.com">
+          <img
+            src="/contactcard1.png"
+            alt="contact card"
+            className="contactcards"
+          />
+        </a>
+        <a href="mailto:jainabhishek1904@gmail.com">
+          <img
+            src="/contactcard2.png"
+            alt="contact card"
+            className="contactcards"
+          />
+        </a>
       </div>
     </div>
   );

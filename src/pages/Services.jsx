@@ -1,6 +1,14 @@
+import { Helmet } from 'react-helmet';
 export default function ServicesPage() {
   return (
     <div className="servicespage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Turn Ideas into Reality | Abhishek Jain's Portfolio | Web Developer |
+          Cross Platform Application Developer
+        </title>
+      </Helmet>
       <div className="projectpage1">
         <div className="projectpage1head">
           <div className="head">

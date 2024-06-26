@@ -1,8 +1,15 @@
 import Marquee from 'react-fast-marquee';
-import { FaStarOfLife, FaCircle } from 'react-icons/fa';
+import { Helmet } from 'react-helmet';
 export default function AboutPage() {
   return (
     <div className="aboutpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          About Me | Abhishek Jain's Portfolio | Web Developer | Cross Platform
+          Application Developer
+        </title>
+      </Helmet>
       <div className="projectpage1">
         <div className="projectpage1head">
           <div className="head">

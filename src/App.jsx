@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Homepage from './Homepage';
@@ -6,31 +6,39 @@ import AboutPage from './pages/About';
 import ProjectsPage from './pages/Projects';
 import ServicesPage from './pages/Services';
 import ContactsPage from './pages/Contacts';
-import ResumePage from './pages/Resume';
 
 export default function App() {
+  const [isOpen, setIsOpen] = useState(false); // State variable for menu visibility
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle menu state on click
+  };
+
   return (
     <>
       <Router>
-        <Header />
+        <Header toggleMenu={toggleMenu} isOpen={isOpen} />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
-          <Route path="/resume" element={<ResumePage />} />
         </Routes>
       </Router>
     </>
   );
 
-  function Header() {
+  function Header({ toggleMenu, isOpen }) {
     return (
       <div className="header">
         <div className="headerlogo">
           <Link className="headerlogo" to={'/'}>
-            <img src="logo2.jpg" alt="logo" className="headerlogoimage" />
+            <img
+              src="/finallogo2removedbg.png"
+              alt="logo"
+              className="headerlogoimage"
+            />
           </Link>
         </div>
 
@@ -74,12 +82,81 @@ export default function App() {
           </a>
         </div>
         <div className="respmenu">
-          <input id="checkbox" type="checkbox" />
-          <label class="toggle" for="checkbox">
-            <div id="bar1" class="bars"></div>
-            <div id="bar2" class="bars"></div>
-            <div id="bar3" class="bars"></div>
+          <input
+            id="checkbox"
+            type="checkbox"
+            checked={isOpen}
+            onChange={toggleMenu}
+          />
+          <label className="toggle" htmlFor="checkbox">
+            <div id="bar1" className="bars"></div>
+            <div id="bar2" className="bars"></div>
+            <div id="bar3" className="bars"></div>
           </label>
+        </div>
+
+        <div className={`responsivemenudiv ${isOpen ? 'open' : ''}`}>
+          <div className="closebutton" onClick={toggleMenu}>
+            x
+          </div>
+          <div className="topheadrespmenu">
+            <img
+              src="/finallogo2removedbg.png"
+              alt="headerlogo"
+              className="respheaderimg"
+            />
+            <div className="respheadertag">Abhishek Jain</div>
+          </div>
+          <div className="respheaderlinksdiv">
+            <Link to="/about" className="respheaderlink" onClick={toggleMenu}>
+              About Me{' '}
+              <div className="arrowicon">
+                <img src="arror.png" alt="" className="arrowiconimg" />
+              </div>
+            </Link>
+            <Link
+              to="/projects"
+              className="respheaderlink"
+              onClick={toggleMenu}
+            >
+              Projects{' '}
+              <div className="arrowicon">
+                <img src="arror.png" alt="" className="arrowiconimg" />
+              </div>
+            </Link>
+            <Link
+              to="/services"
+              className="respheaderlink"
+              onClick={toggleMenu}
+            >
+              Services{' '}
+              <div className="arrowicon">
+                <img src="arror.png" alt="" className="arrowiconimg" />
+              </div>
+            </Link>
+            <Link
+              to="/contacts"
+              className="respheaderlink"
+              onClick={toggleMenu}
+            >
+              Contacts{' '}
+              <div className="arrowicon">
+                <img src="arror.png" alt="" className="arrowiconimg" />
+              </div>
+            </Link>
+            <a
+              href="/Abhishekjain.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="respheaderlink"
+              onClick={toggleMenu}
+            >
+              Resume{' '}
+              <div className="arrowicon">
+                <img src="arror.png" alt="" className="arrowiconimg" />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     );
