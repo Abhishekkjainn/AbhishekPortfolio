@@ -14,12 +14,12 @@ export default function ContactsPage() {
       </div>
       <div className="contactpage2">
         <img
-          src="contactcard1.png"
+          src="/contactcard1.png"
           alt="contact card"
           className="contactcards"
         />
         <img
-          src="contactcard2.png"
+          src="/contactcard2.png"
           alt="contact card"
           className="contactcards"
         />
