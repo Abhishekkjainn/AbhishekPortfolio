@@ -170,10 +170,12 @@ export default function Homepage() {
             <span className="blue"> high-quality results</span> that meet client
             needs and exceed expectations.
           </div>
-          <div className="resumebutton">
-            <div className="circlebutton"></div>
-            <div className="buttonhead">Resume</div>
-          </div>
+          <Link to={'/about'} className="linkstyle">
+            <div className="resumebutton">
+              <div className="circlebutton"></div>
+              <div className="buttonhead">About Me</div>
+            </div>
+          </Link>
         </div>
       </div>
     );
@@ -636,10 +638,12 @@ export default function Homepage() {
     return (
       <div className="page9">
         <div className="page9head">Intersted in Working Together?</div>
-        <div className="resumebutton">
-          <div className="circlebutton"></div>
-          <div className="buttonhead">Drop Me a Mail</div>
-        </div>
+        <Link to={'/contacts'} className="linkstyle">
+          <div className="resumebutton">
+            <div className="circlebutton"></div>
+            <div className="buttonhead">Drop Me a Mail</div>
+          </div>
+        </Link>
       </div>
     );
   }

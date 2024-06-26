@@ -6,6 +6,7 @@ import AboutPage from './pages/About';
 import ProjectsPage from './pages/Projects';
 import ServicesPage from './pages/Services';
 import ContactsPage from './pages/Contacts';
+import ResumePage from './pages/Resume';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contacts" element={<ContactsPage />} />
+          <Route path="/resume" element={<ResumePage />} />
         </Routes>
       </Router>
     </>
@@ -59,12 +61,17 @@ export default function App() {
           </Link>
         </div>
         <div className="resumelink">
-          <Link to={'/resume'} className="linkstyle">
+          <a
+            href="/Abhishekjain.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="linkstyle"
+          >
             <div className="linkdiv">
-              <div className="circlefill"></div>{' '}
+              <div className="circlefill"></div>
               <div className="text">Resume</div>
             </div>
-          </Link>
+          </a>
         </div>
         <div className="respmenu">
           <input id="checkbox" type="checkbox" />

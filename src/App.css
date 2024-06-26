@@ -1203,15 +1203,38 @@ body{
 }
 
 /*Services Page*/
-.servicespage{
+.servicespage2{
     width: 100%;
     /* min-height: 100vh; */
     max-height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/*Contacts Page*/
+.contactspage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+.contactpage2{
+    width: 100%;
+    height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.contactcards{
+    height: 75vh;
+    border-radius: 40px;
+    margin: 30px;
 }
 
 @media (max-width: 1000px) and (min-width: 600px) {
@@ -1852,10 +1875,14 @@ body{
         right: 60px;
         z-index: 500;
     }
+    .page3{
+        height: auto;
+        padding-bottom: 40px;
+    }
     .skillsection{
     margin-top: 20px;
         width: 100%;
-        height: 90vh;
+        height: 110vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1866,7 +1893,7 @@ body{
         height: 30%;
         border: none;
         border-radius: 20px;
-        margin: 5px;
+        margin: 10px;
         position: relative; 
     }
 
@@ -1900,7 +1927,7 @@ body{
     }
     .skilldiv:hover{
         width: 80%;
-        height: 50%;
+        height: 45%;
         transition: 0.5s;
     }
     .topskilldiv{
@@ -1912,7 +1939,7 @@ body{
     }
     .middleskilldiv{
         width: 90%;
-        height: 60%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2468,6 +2495,28 @@ body{
         color: white;
         font-weight: 100;
     }
+    /*Contacts Page*/
+.contactspage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+}
+.contactpage2{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.contactcards{
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+    margin: 30px;
+}
 
     
 }
