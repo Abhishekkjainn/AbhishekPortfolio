@@ -20,7 +20,14 @@ export default function Livit() {
       <div className="indskillsusedpage">
         <div className="indpage3head">Skills Used</div>
         <div className="indskillstagdiv">
-          <div className="indskilltag"></div>
+          <div className="indskilltag">App Development</div>
+          <div className="indskilltag">Cross Platform App Dev</div>
+          <div className="indskilltag">Backend Development</div>
+          <div className="indskilltag">Firebase Database</div>
+          <div className="indskilltag">UI UX Designing</div>
+          <div className="indskilltag">Dynamic Programming</div>
+          <div className="indskilltag">Flutter</div>
+          <div className="indskilltag">Dart Programming</div>
         </div>
       </div>
       <div className="indlogopage">
