@@ -2245,10 +2245,10 @@ body{
         align-items: center;
     }
     .getquotebutton{
-        padding-right:30px;
-        padding-left: 30px;
-        padding-bottom: 15px;
-        padding-top: 15px;
+        padding-right:15px;
+        padding-left: 15px;
+        padding-bottom: 10px;
+        padding-top: 10px;
         border-radius: 40px;
         background-color: black;
         color: white;
@@ -3086,4 +3086,20 @@ body{
         justify-content: center;
         align-items: center;
     }
+}
+
+
+/*Services Section*/
+.appdeveloperpage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.appdevbanner{
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
