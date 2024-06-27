@@ -25,7 +25,10 @@ export default function ProjectsPage() {
 
       <div className="projectpage2">
         <div className="projectpagesection">
-          <div className="projectpagecard livitcard">
+          <Link
+            to={'/projects/livit'}
+            className="projectpagecard livitcard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">1.</div>
               <div className="projectpagetags">
@@ -45,8 +48,12 @@ export default function ProjectsPage() {
                 Your one-stop shop for all things events at VIT Vellore.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard solerocard">
+          </Link>
+
+          <Link
+            to={'/projects/solero'}
+            className="projectpagecard solerocard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">2.</div>
               <div className="projectpagetags">
@@ -68,8 +75,11 @@ export default function ProjectsPage() {
                 elevate their space.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard newsmancard">
+          </Link>
+          <Link
+            to={'/projects/newsmann'}
+            className="projectpagecard newsmancard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">3.</div>
               <div className="projectpagetags">
@@ -89,8 +99,11 @@ export default function ProjectsPage() {
                 This Dynamic app keeps users engaged with the latest news.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard spenndcard">
+          </Link>
+          <Link
+            to={'/projects/spennd'}
+            className="projectpagecard spenndcard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">4.</div>
               <div className="projectpagetags">
@@ -110,8 +123,11 @@ export default function ProjectsPage() {
                 data persistence keep you in control.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard reordercard">
+          </Link>
+          <Link
+            to={'/projects/reorder'}
+            className="projectpagecard reordercard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">5.</div>
               <div className="projectpagetags">
@@ -133,8 +149,11 @@ export default function ProjectsPage() {
                 and sellers.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard tmdbcard">
+          </Link>
+          <Link
+            to={'/projects/TMDB'}
+            className="projectpagecard tmdbcard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">6.</div>
               <div className="projectpagetags">
@@ -154,8 +173,11 @@ export default function ProjectsPage() {
                 them, enhancing the browsing experience.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard visioncard">
+          </Link>
+          <Link
+            to={'/projects/vision'}
+            className="linkstyle projectpagecard visioncard"
+          >
             <div className="topprojectpagecard">
               <div className="sno">7.</div>
               <div className="projectpagetags">
@@ -177,8 +199,11 @@ export default function ProjectsPage() {
                 interface.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard hoodeyecard">
+          </Link>
+          <Link
+            to={'/projects/hoodeye'}
+            className="projectpagecard hoodeyecard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">8.</div>
               <div className="projectpagetags">
@@ -200,8 +225,11 @@ export default function ProjectsPage() {
                 years.
               </div>
             </div>
-          </div>
-          <div className="projectpagecard karigaricard">
+          </Link>
+          <Link
+            to={'/projects/karigari'}
+            className="projectpagecard karigaricard linkstyle"
+          >
             <div className="topprojectpagecard">
               <div className="sno">9.</div>
               <div className="projectpagetags">
@@ -221,7 +249,7 @@ export default function ProjectsPage() {
                 enhances the shopping experience for users.
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

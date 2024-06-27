@@ -1272,6 +1272,14 @@ body{
     background-position: center;
     background-size: cover;
 }
+.projectcard-link{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /*Services Page*/
 .servicespage2{
@@ -2814,6 +2822,7 @@ body{
     content: 'View Live Page'; /* Add the content on hover */
     display: flex; /* Show the overlay on hover */
 }
+.projcard{}
 
 
 
