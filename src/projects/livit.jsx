@@ -14,9 +14,12 @@ export default function Livit() {
           college experience.
         </div>
       </div>
-      <div className="indprojectpage2">
+      <a
+        href="https://github.com/Abhishekkjainn/LiVIT-Events"
+        className="indprojectpage2"
+      >
         <img src="/livitmockup2.png" alt="" className="indfirstimg" />
-      </div>
+      </a>
       <div className="indskillsusedpage">
         <div className="indpage3head">Skills Used</div>
         <div className="indskillstagdiv">
@@ -26,7 +29,7 @@ export default function Livit() {
           <div className="indskilltag">Firebase Database</div>
           <div className="indskilltag">UI UX Designing</div>
           <div className="indskilltag">Dynamic Programming</div>
-          <div className="indskilltag">Flutter</div>
+          <div className="indskilltag">Flutter </div>
           <div className="indskilltag">Dart Programming</div>
         </div>
       </div>
@@ -36,8 +39,42 @@ export default function Livit() {
           <div className="logoimg1">
             <img src="/livitlogo.jpg" alt="" className="logodivimg" />
           </div>
-          <div className="logoimg2">
-            <img src="/livitindimg.png" alt="" className="logodivimg" />
+          <div className="logoimg2 blueback">
+            <img src="/livitindmock.jpg" alt="" className="logodivimg" />
+          </div>
+        </div>
+      </div>
+
+      <div className="indfeaturespage">
+        <div className="indpage3head">Gallery</div>
+        <div className="indimagesdiv">
+          <div className="indimagecard">
+            <img
+              src="/livitimages/livit1.jpg"
+              alt="livit1"
+              className="indimageimg"
+            />
+          </div>
+          <div className="indimagecard">
+            <img
+              src="/livitimages/livit2.jpg"
+              alt="livit1"
+              className="indimageimg"
+            />
+          </div>
+          <div className="indimagecard">
+            <img
+              src="/livitimages/livit3.jpg"
+              alt="livit1"
+              className="indimageimg"
+            />
+          </div>
+          <div className="indimagecard">
+            <img
+              src="/livitimages/livit4.jpg"
+              alt="livit1"
+              className="indimageimg"
+            />
           </div>
         </div>
       </div>

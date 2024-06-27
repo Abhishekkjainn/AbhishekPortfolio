@@ -2649,6 +2649,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .indfirstimg{
     width: 80%;
@@ -2691,8 +2692,12 @@ body{
     height: 100%;
 }
 .logoimg2{
+    /* background-color: royalblue; */
     width: 50%;
     height: 100%;
+}
+.blueback{
+    background-color: royalblue;
 }
 .logodivimg{
     width: 100%;
@@ -2726,6 +2731,88 @@ body{
     font-family: 'Bebas Neue';
     font-size: 25px;
     margin: 15px;
+}
+.indfeaturespage{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.indimagesdiv{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.indimagecard{
+    width: 45%;
+    height: auto;
+    /* background-color: #ff3838; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.indimageimg{
+    width: 80%;
+    border-radius: 30px;
+    border: 5px solid grey;
+    object-fit: contain;
+}
+.indimagesdivmonitor{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.indimagecardmonitor{
+    width: 80%;
+    height: auto;
+    /* background-color: #ff3838; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indprojectpage2::after {
+    transition: 0.5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none; /* Hide the overlay initially */
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.518);
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 80px;
+}
+
+.indprojectpage2:hover::after {
+    transition: 0.5s;
+    content: 'View Live Page'; /* Add the content on hover */
+    display: flex; /* Show the overlay on hover */
 }
 
 
@@ -2786,6 +2873,7 @@ body{
     .logoimg2{
         width: 80%;
         height: 100%;
+        background-color: #ff3838;
     }
     .logodivimg{
         width: 100%;
@@ -2810,6 +2898,53 @@ body{
         font-family: 'Bebas Neue';
         font-size: 18px;
         margin: 10px;
+    }
+    .indfeaturespage{
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .indimagesdiv{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .indimagecard{
+        width: 90%;
+        height: auto;
+        /* background-color: #ff3838; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .indimageimg{
+        width: 100%;
+        border-radius: 50px;
+        border: 5px solid grey;
+        object-fit: contain;
+    }
+    .indimagecardmonitor{
+        width: 100%;
+        height: auto;
+        /* background-color: #ff3838; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
@@ -2894,5 +3029,52 @@ body{
         font-family: 'Bebas Neue';
         font-size: 14px;
         margin: 10px;
+    }
+    .indfeaturespage{
+        width: 100%;
+        height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .indimagesdiv{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 90%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+    .indimagecard{
+        width: 100%;
+        height: auto;
+        /* background-color: #ff3838; */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .indimageimg{
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid grey;
+        object-fit: contain;
+    }
+    .indimagecardmonitor{
+        width: 100%;
+        height: auto;
+        /* background-color: #ff3838; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
