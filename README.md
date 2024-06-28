@@ -1,6 +1,3 @@
-Here's a draft for your `README.md` file on GitHub:
-
-```markdown
 # Abhishek Jain - Portfolio
 
 Welcome to my portfolio repository! I am Abhishek Jain, a versatile software developer specializing in full-stack web development and cross-platform Flutter app development. This portfolio showcases my work, highlighting my skills and projects.
