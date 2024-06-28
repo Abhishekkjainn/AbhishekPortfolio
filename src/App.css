@@ -977,7 +977,7 @@ body{
 }
 .page9{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-color: #ff3838;
     background-attachment: fixed;
     background: url('/gradient2.png');
@@ -992,9 +992,8 @@ body{
 .page9head{
     font-family: 'Bebas Neue';
     font-size: 80px;
-    color: black;
+    color: white;
     font-weight: 500;
-    transform: scaleY(1.8) scaleX(1);
     text-align: center;
 }
 .page9subhead{
@@ -2394,11 +2393,11 @@ body{
         background-size: cover;
     }
     .page9head{
-        width: 80%;
+        width: 90%;
         text-align: center;
         font-family: 'Bebas Neue';
         font-size: 50px;
-        color: black;
+        color: white;
         font-weight: 500;
         transform: scaleY(1) scaleX(1);
         display: flex;
@@ -3102,4 +3101,19 @@ body{
 .appdevbanner{
     margin-bottom: 40px;
     margin-top: 40px;
+}
+
+
+.automatepage{
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comingsoonhead{
+    font-family: 'Bebas Neue';
+    color: white;
+    font-size: 70px;
 }

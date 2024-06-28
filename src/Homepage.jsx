@@ -561,8 +561,18 @@ export default function Homepage() {
             <div className="middlesubhead">I got you</div>
           </div>
           <div className="bottombanner">
-            <div className="getquotebutton">Get Quote</div>
-            <div className="getquotebutton">Send me Idea</div>
+            <a
+              href="mailto:jainabhishek1904@gmail.com"
+              className="getquotebutton"
+            >
+              Get Quote
+            </a>
+            <a
+              href="mailto:jainabhishek1904@gmail.com"
+              className="getquotebutton"
+            >
+              Send me Idea
+            </a>
           </div>
         </div>
       </div>
