@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
 export default function Hoodeye() {
   return (
     <div className="livitpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Project Hoodeye | Abhishek Jain | App Developer</title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>

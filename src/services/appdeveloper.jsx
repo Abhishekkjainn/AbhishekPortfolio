@@ -1,6 +1,13 @@
+import { Helmet } from 'react-helmet';
 export default function Appdev() {
   return (
     <div className="appdeveloperpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          Unlock Your App Idea - Cross-Platform Solutions | Abhishek Jain
+        </title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>

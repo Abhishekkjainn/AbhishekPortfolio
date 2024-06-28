@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
 export default function TMDB() {
   return (
     <div className="livitpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Project TMDB-Drive | Abhishek Jain | App Developer</title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>

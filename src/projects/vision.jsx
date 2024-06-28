@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
 export default function Vision() {
   return (
     <div className="livitpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Project Vision | Abhishek Jain | App Developer</title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>

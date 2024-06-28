@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
 export default function Uiux() {
   return (
     <div className="appdeveloperpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Fuel Your Growth with UI/UX Design | Abhishek Jain</title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>

@@ -1,6 +1,11 @@
+import { Helmet } from 'react-helmet';
 export default function Webdeveloper() {
   return (
     <div className="appdeveloperpage">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Building Engaging and Dynamic Websites | Abhishek Jain</title>
+      </Helmet>
       <div className="indprojectpage1">
         <div className="indprojecthead">
           <div className="indcircle"></div>
