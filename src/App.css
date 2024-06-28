@@ -3085,6 +3085,19 @@ body{
         justify-content: center;
         align-items: center;
     }
+    .contactpage2{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactcards{
+        width: 95%;
+        border-radius: 15px;
+        margin: 0;padding: 0;
+        margin-bottom: 30px;
+    }
 }
 
 

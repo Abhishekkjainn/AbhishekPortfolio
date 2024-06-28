@@ -21,14 +21,14 @@ export default function ContactsPage() {
         </div>
       </div>
       <div className="contactpage2">
-        <a href="mailto:jainabhishek1904@gmail.com">
+        <a href="mailto:jainabhishek1904@gmail.com" className="contactpage2">
           <img
             src="/contactcard1.png"
             alt="contact card"
             className="contactcards"
           />
         </a>
-        <a href="mailto:jainabhishek1904@gmail.com">
+        <a href="mailto:jainabhishek1904@gmail.com" className="contactpage2">
           <img
             src="/contactcard2.png"
             alt="contact card"
